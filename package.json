@@ -1,0 +1,25 @@
+{
+  "name": "zotero-notes-app",
+  "version": "1.0.0",
+  "description": "Zotero but for humans",
+  "main": "back/index.js",
+  "repository": "https://github.com/janbaykara/zotero-notes-app.git",
+  "author": "Jan Baykara <janbaykara@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "start": "npm run build:live",
+    "build:live": "nodemon --exec ts-node -- ./back/index.ts"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^4.0.3",
+    "@types/koa": "^2.0.45",
+    "@types/node": "^9.6.5",
+    "dotenv": "^5.0.1",
+    "tslint-config-prettier": "^1.10.0",
+    "typescript": "^2.8.1"
+  },
+  "dependencies": {
+    "koa": "^2.5.0"
+  }
+}
